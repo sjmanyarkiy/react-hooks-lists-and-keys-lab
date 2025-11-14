@@ -5,18 +5,19 @@ function ProjectList({ projects }) {
 
   const projectItem = projects.map((project) => {
     return <ProjectItem 
-      key={project.id}
-      name={project.name}
-      about={project.about}
+      key = {project.id}
+      name = {project.name}
+      about = {project.about}
       technologies={project.technologies}
-    />      
+    />
   })
-  console.log(projects);
 
+  console.log(projects);
   return (
     <div id="projects">
       <h2>My Projects</h2>
-      <div id="project-list">{/* render ProjectItem components here */}
+      <div id="project-list">
+        {/* render ProjectItem components here */}
         {projectItem}
       </div>
     </div>
